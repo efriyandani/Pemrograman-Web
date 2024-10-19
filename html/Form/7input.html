@@ -6,19 +6,37 @@
   <title>Input</title>
 </head>
 <body>
-  <input type="checkbox"><br>
-  <input type="radio"><br>
-  <input type="date"><br>
-  <input type="number"><br>
-  <input type="file"><br>
-  <input type="password"><br>
-  <input type="text">
+  <form action="" method="get">
+    <fieldset>
+      <legend>Biodata</legend>
+      <input type="checkbox"><br>
+      <input type="radio"><br>
+      <input type="date"><br>
+      <input type="number"><br>
+      <input type="file"><br>
+      <input type="password"><br>
+      <input type="text">
+    </fieldset>
+    <fieldset>
+      <legend>Pilih jenis kelamin</legend>
+      <input type="radio" name="jk" id="l" value="l">
+      <label for="l">Laki-laki</label>
+      <input type="radio" name="jk" id="p" value="p">
+      <label for="p">Perempuan</label>
+    </fieldset>
 
-  <input type="radio" name="jk" id="l">
-  <label for="l">Laki-laki</label>
-  <input type="radio" name="jk" id="p">
-  <label for="p">Perempuan</label>
-
-  <input type="hidden" name="" value="">
+    <fieldset>
+      <legend>Pendidikan sebelumnya</legend>
+      <label for="pendidikan">Pilih pendidikan sebelumnya</label>
+      <input type="text" id="pendidikan" list="list-pdd" name="pendidikan">
+      <datalist id="list-pdd">
+        <option value="SMA">
+        <option value="SMK">
+        <option value="MA">
+      </datalist>
+    </fieldset>
+<input type="submit" value="kirim">
+    <input type="hidden" name="" value="">
+  </form>
 </body>
 </html>
